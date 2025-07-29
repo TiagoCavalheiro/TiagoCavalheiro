@@ -1,0 +1,54 @@
+name: Update VOST Experience Badge
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Every 6 hours
+  workflow_dispatch:  # Manual trigger
+  push:
+    paths:
+      - 'README.md'
+
+jobs:
+  update-badge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Calculate VOST experience
+        id: months
+        run: |
+          START_DATE="2025-05-27"
+          CURRENT_DATE=$(date +%Y-%m-%d)
+          
+          # Calculate months using Python
+          MONTHS=$(python3 -c "
+          from datetime import datetime
+          start = datetime.strptime('$START_DATE', '%Y-%m-%d')
+          current = datetime.strptime('$CURRENT_DATE', '%Y-%m-%d')
+          months = (current.year - start.year) * 12 + (current.month - start.month)
+          print(max(0, months))
+          ")
+          
+          echo "months=$MONTHS" >> $GITHUB_OUTPUT
+          echo "Calculated $MONTHS months of experience since May 27, 2025"
+
+      - name: Update README with new badge
+        run: |
+          # Create the new VOST badge URL
+          NEW_VOST_BADGE="https://img.shields.io/badge/VOST+Portugal-${{ steps.months.outputs.months }}%20Months-blue?style=for-the-badge&logo=work"
+          
+          # Update the VOST badge in README.md
+          sed -i "s|https://img.shields.io/badge/VOST+Portugal-[^\"']*|$NEW_VOST_BADGE|g" README.md
+          
+          # Also update the text in About Me section
+          sed -i "s/for the past [0-9]* months/for the past ${{ steps.months.outputs.months }} months/g" README.md
+          
+          echo "Updated VOST badge to show ${{ steps.months.outputs.months }} months"
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update VOST experience badge to ${{ steps.months.outputs.months }} months" && git push) 

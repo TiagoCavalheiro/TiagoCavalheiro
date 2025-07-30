@@ -57,8 +57,11 @@ Outside of school and work, I also like creating custom modpacks for Minecraft. 
 ## ⏰ Development Activity
 
 <div align="center">
-  <img src="https://wakatime.com/share/@dc247e60-406f-4751-a1f4-80e793026797/62efbbc7-5827-4b78-baf1-5f995d132cb5.png" alt="WakaTime" />
+  <a href="https://wakatime.com/@dc247e60-406f-4751-a1f4-80e793026797">
+    <img src="https://wakatime.com/share/@dc247e60-406f-4751-a1f4-80e793026797/0df1a4dd-21d2-42b5-91e0-309e551f0623.svg" alt="WakaTime Activity" />
+  </a>
 </div>
+
 
 ---
 

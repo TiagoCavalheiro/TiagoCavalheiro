@@ -8,7 +8,6 @@
   <img src="https://img.shields.io/badge/Status-Student and Developer-brightgreen?style=for-the-badge&logo=github" alt="Status" />
   <img src="https://img.shields.io/badge/Location-Portugal-blue?style=for-the-badge&logo=location" alt="Location" />
   <img src="https://img.shields.io/badge/Age-17%20Years-orange?style=for-the-badge&logo=age" alt="Age" />
-  <img src="https://img.shields.io/badge/VOST Portugal-2%20Months-blue?style=for-the-badge&logo=work" alt="VOST Portugal" />
 </div>
 
 ---
@@ -51,17 +50,6 @@ Outside of school and work, I also like creating custom modpacks for Minecraft. 
     <img src="https://github-readme-streak-stats.herokuapp.com/?user=TiagoCavalheiro&theme=radical&hide_border=true" alt="GitHub Streak" />
   </a>
 </div>
-
----
-
-## ⏰ Development Activity
-
-<div align="center">
-  <a href="https://wakatime.com/@dc247e60-406f-4751-a1f4-80e793026797">
-    <img src="https://wakatime.com/share/@dc247e60-406f-4751-a1f4-80e793026797/0df1a4dd-21d2-42b5-91e0-309e551f0623.svg" alt="WakaTime Activity" />
-  </a>
-</div>
-
 
 ---
 

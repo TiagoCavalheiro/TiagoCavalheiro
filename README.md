@@ -40,19 +40,6 @@ Outside of school and work, I also like creating custom modpacks for Minecraft. 
 
 ---
 
-## 📊 GitHub Statistics
-
-<div align="center">
-  <a href="https://github.com/TiagoCavalheiro">
-    <img src="https://github-readme-stats-seven-gamma-11.vercel.app/api?username=TiagoCavalheiro&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="GitHub Stats" />
-  </a>
-  <a href="https://github.com/TiagoCavalheiro">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=TiagoCavalheiro&theme=radical&hide_border=true" alt="GitHub Streak" />
-  </a>
-</div>
-
----
-
 ## 🤝 Let's Connect
 
 <div align="center">
@@ -82,5 +69,4 @@ Outside of school and work, I also like creating custom modpacks for Minecraft. 
   
   <p><em>"The best code is the code that makes a difference."</em></p>
   
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=TiagoCavalheiro&theme=radical" alt="Profile Details" />
 </div>
